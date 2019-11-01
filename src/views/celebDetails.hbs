@@ -1,0 +1,11 @@
+{{ celeb.name }}
+{{ celeb.catchPhrase }}
+{{ celeb.occupation }}
+
+<form action="/celebs/{{celeb._id}}/delete" method="post">
+  <button type="submit">delete</button>
+</form>
+
+<form action="/celebs/{{celeb._id}}/edit" method="get">
+  <button type="submit">edit</button>
+</form>
